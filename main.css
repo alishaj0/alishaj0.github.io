@@ -237,42 +237,5 @@ body {
       padding: 10px 20px;
   }
 
-/* Media Queries */
 
-@media (max-width: 600px) {
-    #header {
-        margin-top: 50px;
-        padding: 0 0;
-        font-size: 50%;
-    }
-    #about {
-        padding: 0 100px;
-        margin: 0;
-        text-align: center;
-        align-items: center;
-        font-size: 50%;
-    }
-    #header .vl {
-        height: 250px;
-        top: 360px;
-    }
-}
 
-@media (min-width:992px) {
-    .card-text {
-        height: 50px;
-        padding:0;
-    }
-}
-
-@media (min-width:1200px) {
-    .card-text {
-        height: 50px;
-    }
-} 
-
-@media (min-width: 1400px){
-    .card-text {
-        height: 40px; 
-    }
-}
