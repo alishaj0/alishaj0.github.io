@@ -1,0 +1,57 @@
+* {
+    font-family: 'IM Fell French Canon', serif;
+    /* Use star because it will select 'every element' in this document to this styling */
+    /* Using the html will only select the 'html' element and styling applyied may or may not be an inherited style and may not apply to every element */
+    /* Also font link is inside the 'html' element, so font wouldn't work if applied strictly to html element */
+}
+
+#header {
+    color:white;
+    background-image: url("Images/header.jpg");
+    height: 95vh; 
+    /* "95vh" (vh=viewport height)to set header to take up most of the screen to create a "section" on the webpage with header. Other 5% is used by navbar*/
+
+    background-position: center;
+    /* "background-position:center;"to center background image within the header */
+
+    background-size: cover;
+    /* background-size:cover; to place pic on entire screen, not stretching the photo. (showing only portion of photo that is in the 'header' section of webpage - if viewport is small enough will show the entire photo in header section) */
+}
+
+@media (max-width: 600px) {
+    /* 600px is the 'extra small' breakpoint */
+    /* Styling will apply when screen < 600px (until has a max-width of 600px) */
+    #header {
+        padding: 0 100px; 
+        /* padding: 0 (top/bottom) 100px (left/right); to apply padding to text so it wont overlap the sides of background image when screen at a width up to 600px */
+    }
+}
+
+@media (min-width:992px) {
+    /* style put in media query will go into effect when viewport >992px (min-width:992px) */
+    /* 992px one of commonly used breakpoints (Large) - check css breakpoints online, to check webpage against all commonly set breakpoints*/
+
+    .card-text {
+        /* adjust class="card-text" so that all cards are the same height at all viewport sizes */
+        height: 110px;
+    }
+}
+
+@media (min-width:1200px) {
+    /* style will apply when viewport is >1200px */
+    .card-text {
+        height: 90px;
+        /* Adjusts card-text class when screen > 1200px, text will adjust so there isn't any 'extra space' below text */
+    }
+}
+
+@media (min-width: 1400px){
+    .card-text {
+        height: 70px; 
+        /* when viewport > 1400px, text will adjust to fit properly - extra space is removed */
+        /* adjusted height -20px at each increased breakpoint */
+    }
+}
+
+/* Media queries are usually one of the last things you will do, after you get the page adjusted to fit one size, then you will adjust to make it responsive to other screensizes with @media queries */
+

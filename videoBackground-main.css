@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* {box-sizing: border-box} will include padding and border when setting the width or height */
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    /* Will remove preset 'underline' or 'decoration' on any text */
+    color:  #4b5163;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.main {
+    position: relative;
+    /* going to be moving things inside the div, so setting parent element (div) to position:relative, we can set position:absolute for inside elements so they move in relation to parent element */
+
+    height: 100vh;
+    /* vh determines the height of the element by setting it to a percentage of the viewport. VW is used for width. VH is used for height */
+
+    display: flex; 
+    /* turn main div into flexbox container */
+
+    flex-direction:column;
+    /* flex-direction:row is default */
+
+    align-items: center;
+    /* align-items to center horizontally */
+
+    justify-content: center;
+    /* center items vertically */
+
+    padding: 0 20px; 
+    /* So text does not go right up to the edge on smaller screen size, set left/right padding*/
+}
+
+.video-container {
+    position:absolute; 
+    /* will position relative to parent element */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* height/width set to take up 100% of viewport */
+    background-image: url("cover.png");
+    background-repeat: no-repeat;
+    /* So image doesnt repeat on small screen */
+    background-position: center;
+    /* So image is centered */
+    background-size: cover;
+    /* so image covers full screen */
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    object-fit: cover;
+    /* When shrink down to smaller screen size, object-fit:cover; will cover video with screen size */
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.content {
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 3;
+    text-align: center;
+}
+
+.click {
+    display: inline-block;
+    /* inline-block allows you to set top and bottom margin as well as width and height. (This is not the case with inline) */
+    margin-top: 25px;
+    padding: 10px 30px;
+    background-color: #4b5163;
+    color: white;
+    border: 2px solid white; 
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.click:hoverr {
+    transform: scale(0.95);
+    /* Scale changes the size of an element */
+}
+
+#about {
+    padding: 50px;
+    text-align: center;
+}
+
+#about p {
+    font-size: 20px;
+    max-width: 500px; 
+    /* container will not be more than 500px including border & padding */
+    margin: auto;   
+}
+
+#about h2 {
+    margin: 40px 0px;
+    color: #4b5163;
+}   
+
+/* use i tag to select FontAwesome Icons */
+i {
+    font-size: 48px;
+    margin: 0 5px;
+
+}

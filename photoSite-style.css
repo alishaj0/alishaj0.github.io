@@ -1,0 +1,48 @@
+body {
+    background: #eee;
+}
+
+p {
+    font-family:'Ubuntu', sans-serif;
+    font-weight: bold;
+    /* bold = largest font weight we imported i.e. 700*/
+
+    /* font-size: 35px; */
+    font-size: 3vw;
+    /* "vw" bases the font size off the width of the screen*/
+    /* Can also use percentage. Will base percent on parent font-size. (16px default font size) */
+    
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 5px solid #ccc; 
+    padding: 10px 0;   
+    
+    width: 47.5%;
+    /* How to determine width... in this case: want element to occupy 2 image spaces and the left & right margin inbetween  */
+    /* Width of two images (22.5 * 2 = 45) */
+    /* Margin width between two images (1.25 * 2 = 2.5) */
+    /* Width of p element (or bottom border = 47.5% */
+    /* setting width of element, so that it will change border to only occupy space element is taking up */
+
+    margin: auto;
+    /* After changing the "width" on an element - text align will no longer work. Will need to use margin. */
+} 
+
+img {
+    /* Screen is 100%. Need to figure out amount(percentage) of space images will take up and then the spacing betwen them (i.e. the margin for each image) */
+
+    width: 22.5%;
+    /* 22.5% * 4 = 90% */
+    /* Images at 22.5% * 4 images across the width of the page, are taking up 90% of screen */
+
+     margin: 1.25%;
+     /* (1.25% * 2) * 4= 10% */
+     /* each image will have 1.25 on each side (left and right margin - two times) */
+    /* 90% + 10% = 100% */
+     
+    float: left;
+    /* The float css property places an element on the left or right side of its container/parent element, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the page. Also it removes "Mystery Space" between elements.  */
+}
+
+

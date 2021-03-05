@@ -1,0 +1,154 @@
+<!-- <!doctype html> -->
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="lePain-main.css">
+
+    <title>Le Pain</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+        <!-- "navbar-dark" for dark background colors then customize with .bg-* utilities -->
+        <!-- "sticky-top" to position navbar to stick at top once scroll down-->
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-bread-slice"></i> Le Pain
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div id="header" class="d-flex flex-column justify-content-center align-items-center m-0 text-center">
+        <!-- "d-flex" for flexbox -->
+        <!-- "flex-column" to change from horizontal elements/flexbox to vertical elements/flexbox -->
+        <!-- "justify-content-center" to center within horiztonal lines -->
+        <!-- "align-items-center" to center along cross axis -->
+        <!-- "m-0" to set margin to zero -->
+        <!-- "text-center" to center text on smaller screen -->
+
+        <h1 class="display-1">Le Pain</h1>
+        <!-- "display-1" for larger H1 -->
+
+        <p class="lead"> When flour and water come together</p>
+        <!-- "lead" for Lead paragraph that strands out from other paragraphs-->
+
+        <a href="#gallery" class="btn btn-secondary">Voir Les Pains</a>
+        <!-- "#gallery" to take us to div with gallery section id -->
+        <!-- "btn btn-secondary" button with secondary color -->
+
+    </div>
+
+        <!-- Gallery -->
+        <div id="gallery" class="bg-dark p-5">
+            <!-- div id="gallery", the section of page that our previous "atag" will link to -->
+            <!-- "bg-dark" to give this gallery section a dark background -->
+            <!-- "p-5" to give padding around the top of this gallery section -->
+            <div class="container">
+                <div class="row">
+                    <!-- "row" to create a Bootstrap Grid -->
+
+                    <!-- Card 1 -->
+                    <div class="mb-4 col-lg-4">
+                        <!-- "mb-4" margin bottom of 4px -->
+                        <!-- "col-lg-4" when screen is >992px, card will take up 4 of 12 columns -->
+                        <div class="card">
+                            <!-- link from BS for "card" with adjustments -->
+                            <img src="Images/baguette.jpg" class="card-img-top" alt="Baguette Bread">
+                            <div class="card-body">
+                              <h5 class="card-title">Baguette</h5>
+                              <p class="card-text"> A baguette is a long, thin loaf of French bread that is commonly made from basic lean dough. It is distinguishable by it's length and crisp crust.</p>
+
+                              <a href="https://en.wikipedia.org/wiki/Baguette 
+                              " target="_blank" class="btn btn-outline-info btn-sm">Learn More</a>
+                                <!-- "btn" for button -->
+                                <!-- "btn-outline-info" to outline in 'info' color -->
+                                <!-- "btn-sm" for small button -->
+
+                              <a href="#" class="btn btn-outline-danger btn-sm">
+                                  <!-- "btn-outline-danger" to outline the heart i tag -->
+                                  <!-- "btn-sm" to make heart itag smaller -->
+                                    <i class="far fa-heart"></i>
+                                    <!-- i tag class copied from FontAwesome Icon -->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="mb-4 col-lg-4">
+                        <div class="card">
+                            <img src="Images/challah.jpg" class="card-img-top" alt="Challah Bread">
+                            <div class="card-body">
+                              <h5 class="card-title">Challah</h5>
+                              <p class="card-text"> Challah is a special bread in Jewish cuisine, usually braided and typically eaten on ceremonial occassions such as Shabbat and major Jewish holidays.</p>
+
+                              <a href="https://en.wikipedia.org/wiki/Challah 
+                              " target="_blank" class="btn btn-outline-info btn-sm">Learn More</a>
+
+                              <a href="#" class="btn btn-outline-danger btn-sm">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="mb-4 col-lg-4">
+                        <div class="card">
+                            <img src="Images/sourdough.jpg" class="card-img-top" alt="Sourdough Bread">
+                            <div class="card-body">
+                              <h5 class="card-title">Sourdough</h5>
+                              <p class="card-text"> Sourdough bread is made by fermentation of dough using naturally occurring lactobacilli and yeast. It uses biological leavening.</p>
+
+                              <a href="https://en.wikipedia.org/wiki/Sourdough 
+                              " target="_blank" class="btn btn-outline-info btn-sm">Learn More</a>
+
+                              <a href="#" class="btn btn-outline-danger btn-sm">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer" class="bg-secondary">
+            <div class="container">
+                <p class="lead mb-0 p-4 text-light text-center"> Built using <a href="https://getbootstrap.com" class="text-info">Bootstrap </a></p>
+                <!-- "lead mb-0" lead paragraph with bottom margin 0px to get rid of margin 'white' space at bottom of page -->
+                <!-- "p-4" to change padding in footer to 4 px-->
+                <!-- "text-light" to change footer text to light color-->
+                <!-- "text-center" to center in footer-->
+                <!-- "text-info" to change 'Bootstrap link' to 'info' color -->
+            </div>
+        </div>
+
+
+    <!-- Bootstrap JavaScript Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
