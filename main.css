@@ -3,7 +3,9 @@
 }
 
 body {
-    background-image: url("Images/sky.jpg");
+    background-image: linear-gradient(to right, rgb(79, 166, 196), rgb(64, 207, 200), rgb(172, 90, 226), rgb(128, 33, 128));
+
+    /* background-image: url("Images/sky.jpg"); */
     background-position: center;
     height: 95vh;
     background-size: cover;
