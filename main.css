@@ -1,15 +1,18 @@
 * {
     font-family: 'Roboto', sans-serif;
+    /* box-sizing: border-box; */
 }
+
 
 body {
     background-image: linear-gradient(to right, rgb(79, 166, 196), rgb(64, 207, 200), rgb(172, 90, 226), rgb(128, 33, 128));
 
     /* background-image: url("Images/sky.jpg"); */
-    background-position: center;
-    height: 95vh;
-    background-size: cover;
-    background-repeat:inherit;
+    /* background-position: center; */
+    height: 100vh;
+    width: 100vw;
+    background-image: cover;
+    /* background-repeat:no-repeat; */
     margin-top: 20px;
 }
 
@@ -69,8 +72,11 @@ body {
     flex-direction:column;
     position: relative;
     top: 200px;
+    left: 0;
+    padding-left: 10px;
+    margin-left: auto;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     padding-top: 40px;
     margin-top: 60px;
     flex-wrap: wrap;
@@ -120,7 +126,6 @@ body {
     color: white;
     border: 5px solid white;
     padding-top: 40px;
-    padding: 40px;
 }
 
 #skills > div:nth-of-type(2) {
