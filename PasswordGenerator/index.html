@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+
+        <div class="result-container">
+          <span id="result">  </span>
+            <!-- emptry span - where password generated will go -->
+
+          <button class="btn" id="clipboard">
+            <i class="far fa-clipboard"></i>
+                <!-- Btn = DOM Event when click clipboard will store infomation -->
+          </button>
+        </div>
+
+        <div id="settings">
+
+          <div class="setting">
+              <!-- labels & inputs all inside individual divs, inside div, inside div container -->
+            <label for="uppercase">Include Uppercase Letters</label>
+            <input type="checkbox" id="uppercase" checked>
+                <!-- checkbox starting off "checked" with the "checked" attribute -->
+          </div>
+
+          <div class="setting">
+            <label for="lowercase">Include Lowercase Letters</label>
+            <input type="checkbox" id="lowercase" checked>
+          </div>
+
+          <div class="setting">
+            <label for="numbers">Include Numbers</label>
+            <input type="checkbox" id="numbers" checked>
+          </div>
+
+          <div class="setting">
+            <label for="symbols">Include Symbols</label>
+            <input type="checkbox" id="symbols" checked>
+          </div>
+
+          <div class="setting">
+            <label for="length">Password Length</label>
+            <!-- Min/Max sets the range. Value is the starting/default number/value -->
+            <input type="number" id="length" min="4" max="20" value="10">
+                <!-- value="10" is starting default password length/value, max length is 20 and minimum length is 4 -->
+          </div>
+
+        </div>  
+            <!-- Closing Settings div -->
+
+        <button class="btn" id="generate">
+          Generate Password
+        </button>
+
+    </div>
+        <!-- Closing container div -->
+     
+
+    <!-- Link to JS file -->
+    <script src="app.js"></script>
+</body>
+</html>

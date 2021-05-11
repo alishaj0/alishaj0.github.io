@@ -1,0 +1,102 @@
+/* Ordered: Element selectors/ class selectors / ID selectors */
+
+/* Star Selector (Selects every element in html file */
+* {
+    box-sizing: border-box;
+    /*  Includes the padding and border when setting a width or height for an element */    
+}
+
+body {
+    background: #0275ff;
+    color: #eef1ef;
+    font-family: 'Open Sans', sans-serif;
+        /*  Will be inherited by all other elements within the body */
+    display: flex;
+        /*  Flexbox used to center div container vertically and horizontally */
+        /*  (Will turn body into flexbox container and all child elements flexbox items) */
+    justify-content: center;
+        /* Align along main axis */
+    align-items: center;
+        /* Align along horizontal axis */
+    height: 100vh;
+        /* Setting height to 100 viewport height so the div container will be centered vertically in viewport */
+    padding: 25px;
+        /* So the div container isn't on the edges of snaller screens/viewports, padding provides to keep from being on edges */  
+}
+
+h2 {
+    margin: 10px 0 20px;
+        /* margin: Top / Right & Left / Bottom; */
+        /* margin: top&bottom / right&left; */
+        /* margin: top / right / bottom / left; (clockwise from top) */
+    text-align: center;
+        /* center text inside of div */
+}
+
+.container {
+    background: #443850;
+    padding: 15px;
+        /* Margin is the space between our element and other elements */
+        /* padding is space between element and border */
+        /* content > padding > border > margin */
+    width: 350px;
+        /*  Width includes content, padding, and border inside with total width */
+    border-radius: 5px;
+    /* height: 400px; */
+    /* padding: 20px; */
+    
+}
+
+.result-container {
+    background-color: #243119;
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px;
+    display: flex;
+        /* Flexbox used to position the span and the button (Making .results-container a flexbox container to make span and button flexbox items) */
+        /* Default value for justify-content: flex-start; */
+    align-items: center;
+    position: relative;
+        /* To position the 'clipboard' button within the flexbox container */
+}
+
+.btn {
+    background-color: #0275ff;
+    border: none;
+    color: #eef1ef;
+    cursor: pointer;
+        /* Changes cursor when hovering over a button */
+    padding: 8px 12px;
+        /*  padding: top&bottom / left&right */
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0; 
+        /* applies to all 5 divs */
+
+}
+
+#clipboard {
+    position: absolute;
+        /*  When using position: absolute need to set top/right/bottom/left in relation to parent 'position:relative' position */
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+}
+
+#generate {
+    font-size: 16px;
+    width: 100%;
+        /* width:100%; to take up full length of parent container item is inside of */
+}
+
+    /* Changes font-size of generated password for smaller screens */
+    /* when screen/viewport is less than 400px */
+@media(max-width: 400px){
+    .result-container {
+        font-size: 14px;
+    }
+}
