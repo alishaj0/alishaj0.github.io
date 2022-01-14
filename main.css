@@ -183,12 +183,18 @@ body {
     text-align: center;
     letter-spacing: 4px;
 }
-
 #gallery h3 {
     font-size: 30px;
-    letter-spacing: 3px;
+    padding-bottom: 30px;
     text-transform: uppercase;
-    padding-bottom:60px;
+    letter-spacing: 4px;
+
+}
+#gallery h5 {
+    font-size: 25px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom:10px;
 }
 
 /* Contact */
